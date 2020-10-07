@@ -45,7 +45,7 @@ $$("h1[class='hello world']", (el) => {
 
 > the second argument in the **select function (\$)** has to be a function which passes one parameter represents the element chosen... so you can access all the element's native properties through out the argument you wrote.
 
-> also note that. the **single select function (\$)** makes you able you access all the selected element native properties, while this is not possible in the **select all function ($\$)** until you loop through it using the **forEach** method.
+> also note that the **single select function (\$)** makes you able to you access all the selected element's native properties, while this is not possible in the **select all function ($\$)** until you loop through it using the **forEach** method.
 
 ### $("h1").innerText == $("h1").txt() == document.querySelector("h1").innerText == document.querySelector("h1").txt().
 
