@@ -47,12 +47,10 @@ $$("h1[class='hello world']", (el) => {
 
 > also note that the **single select function (\$)** makes you able to you access all the selected element's native properties, while this is not possible in the **select all function ($\$)** until you loop through it using the **forEach** method.
 
-### $("h1").innerText == $("h1").txt() == document.querySelector("h1").innerText == document.querySelector("h1").txt().
+> $("h1").innerText == $("h1").txt() == document.querySelector("h1").innerText == document.querySelector("h1").txt(). and so on...
 
-### and so on...
 
 ## select parents element(s)
-
 ```javascript
 $("h1").parents(); // this will return an array of the selected element parents
 
@@ -62,21 +60,19 @@ $("h1").parent(); // this will return the direct parent
 ```
 
 ## select next element(s)
-
 ```javascript
 $("h1").next(); // this will return an array of the selected element next elements
 
-$("h1").nextUntil("#third-sibling"); // this will return an array of selected element next siblings and ends with the element which you specified
+$("h1").nextUntil("#some-next-element"); // this will return an array of selected element next siblings and ends with the element which you specified
 
 $("h1").next(); // this will return the right following element
 ```
 
 ## select prev element(s)
-
 ```javascript
 $("h1").prev(); // this will return an array of the selected element prev elements
 
-$("h1").prevUntil("#third-sibling"); // this will return an array of selected element prev siblings and ends with the element which you specified
+$("h1").prevUntil("#some-prev-element"); // this will return an array of selected element prev siblings and ends with the element which you specified
 
 $("h1").prev(); // this will return the right previous element
 ```
@@ -84,7 +80,6 @@ $("h1").prev(); // this will return the right previous element
 > Note: all of the methods mentioned above are also available in the **select all function (\$\$)**.
 
 ## finding child(ren)
-
 ```javascript
 $("element").children; // returns an array of all the direct child(ren).. this method not available in the select All fucntion
 
