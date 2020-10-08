@@ -1,4 +1,4 @@
-# inhanced-jquery
+# mini-jquery
 
 ## Selecting Elements
 
