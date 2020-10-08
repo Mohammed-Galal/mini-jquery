@@ -1,0 +1,255 @@
+label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5rem 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: calc(1em * var(--fs));
+  font-weight: normal;
+  color: #000;
+}
+
+html.dark .h1,
+html.dark .h2,
+html.dark .h3,
+html.dark .h4,
+html.dark .h5,
+html.dark .h6,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #fff;
+}
+
+.h1,
+h1 {
+  --fs: 2;
+}
+
+.h2,
+h2 {
+  --fs: 1.5;
+}
+
+.h3,
+h3 {
+  --fs: 1.17;
+}
+
+.h4,
+h4 {
+  --fs: 1;
+}
+
+.h5,
+h5 {
+  --fs: 0.83;
+}
+
+.h6,
+h6 {
+  --fs: 0.67;
+}
+
+.lead {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+abbr[data-original-title],
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+blockquote,
+address {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  opacity: 0.75;
+}
+
+a[href] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+c {
+  font: inherit;
+  font-family: cursive;
+}
+
+m,
+code,
+kbd,
+pre,
+samp {
+  font: inherit;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em;
+  -ms-overflow-style: scrollbar;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+code {
+  background-color: #d63384;
+  /* color: #e83e8c; */
+  color: #fff;
+  word-wrap: break-word;
+  border-radius: 0.2em;
+}
+
+a > code {
+  color: inherit;
+  font: inherit;
+}
+
+kbd {
+  padding: 0.2em 0.4em;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2em;
+  font-weight: inherit;
+}
+
+kbd kbd {
+  background-color: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: inherit;
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+caption {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+mark {
+  padding: 0.1rem;
+  background-color: #fcf8e3;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+output {
+  display: inline-block;
+}
+
+::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: currentColor;
+  font: inherit;
+}
+
+::placeholder,
+input::-webkit-input-placeholder {
+  color: currentColor;
+  font: inherit;
+}
+
+::-moz-placeholder {
+  color: currentColor;
+  font: inherit;
+}

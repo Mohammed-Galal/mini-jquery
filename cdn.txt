@@ -1,0 +1,5 @@
+https://cdn.jsdelivr.net/gh/Mohammed-Galal/jquery/main.js
+
+
+// how to host things in jsDeliver
+- https://cdn.jsdelivr.net/gh/your-name/folder-name/file-name.extention
