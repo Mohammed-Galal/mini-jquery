@@ -204,15 +204,15 @@ export default {
 
   scroll: function (top, left) {
     if (top && !left && typeof top !== "string") {
-      this.scrollTop = left.top + "px";
-      this.scrollLeft = left.left + "px";
+      this.scrollTop = left.top;
+      this.scrollLeft = left.left;
       return this;
     }
     if (top && !left) {
-      this.scrollTop = top + "px";
+      this.scrollTop = top;
       return this;
     } else if (left && !top) {
-      this.scrollLeft = left + "px";
+      this.scrollLeft = left;
       return this;
     }
     const obj = {
