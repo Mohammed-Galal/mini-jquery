@@ -85,6 +85,12 @@ $("h1").prevUntil("#some-prev-element"); // this will return an array of selecte
 $("h1").prev(); // this will return the right previous element
 ```
 
+## select siblings
+
+```javascript
+$("element").siblings(); // this will return all the element siblings
+```
+
 > Note: all of the methods mentioned above are also available in the **select all function (\$\$)**.
 
 ## finding child(ren)
@@ -190,3 +196,15 @@ $("element").offset("top, left"); // this will return an object of the element's
 ```
 
 > the offset method is also available with the **select All function (\$\$)**
+
+## checking
+
+```javascript
+$("element").is("element"); // checks if the selected is equal to the specified element or not
+
+$("element").has("childElement"); // checks if the selected element has a specific child
+
+$("element").hasClass("some-class, another-class,...."); // checks is the selected element has a specific class
+```
+
+> the checking methods is also available with the **select All function (\$\$)**
