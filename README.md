@@ -180,3 +180,13 @@ $$("elements")[number] > // to select the element with its index
   OR;
 $$("elements").eq(number); // to select the element with its index
 ```
+
+## offset
+
+```javascript
+$("element").offset(); // this will return an object of the element's dimentions
+
+$("element").offset("top, left"); // this will return an object of the element's specified dimentions
+```
+
+> the offset method is also available with the **select All function (\$\$)**
