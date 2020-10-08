@@ -49,19 +49,24 @@ $$("h1[class='hello world']", (el) => {
 
 > $("h1").innerText == $("h1").txt() == document.querySelector("h1").innerText == document.querySelector("h1").txt(). and so on...
 
-
 ## select parents element(s)
+
 ```javascript
-$("h1").parents(); // this will return an array of the selected element parents
+$("h1").parent(); // this will return the direct parent
 
 $("h1").parentsUntil("#second-parent"); // this will return an array of selected element parents and ends with the element which you specified
 
-$("h1").parent(); // this will return the direct parent
+$("h1").parents(); // this will return an array of the selected element parents
+
+$("h1").parents(".parent"); // this will return an array of all parent elements which has class parent
 ```
 
 ## select next element(s)
+
 ```javascript
-$("h1").next(); // this will return an array of the selected element next elements
+$("h1").nextAll(); // this will return an array of the selected element next elements
+
+$("h1").nextAll(".test"); // this will return an array of all the following elements that has cals "test"
 
 $("h1").nextUntil("#some-next-element"); // this will return an array of selected element next siblings and ends with the element which you specified
 
@@ -69,8 +74,11 @@ $("h1").next(); // this will return the right following element
 ```
 
 ## select prev element(s)
+
 ```javascript
-$("h1").prev(); // this will return an array of the selected element prev elements
+$("h1").prevAll(); // this will return an array of the selected element prev elements
+
+$("h1").prevAll(".test"); // this will return an array of all the prev elements that has cals "test"
 
 $("h1").prevUntil("#some-prev-element"); // this will return an array of selected element prev siblings and ends with the element which you specified
 
@@ -80,10 +88,95 @@ $("h1").prev(); // this will return the right previous element
 > Note: all of the methods mentioned above are also available in the **select all function (\$\$)**.
 
 ## finding child(ren)
-```javascript
-$("element").children; // returns an array of all the direct child(ren).. this method not available in the select All fucntion
 
-$("element").$("childElement"); // that will return the child element if found
+```javascript
+$("element").children; // returns an array of all the direct children
+```
+
+> this method not available in the select All fucntion
+
+```javascript
+$("element").$("childElement"); // that will return the targeted child element if found
+
+$("element").$$("childElements"); // that will return the targeted children elements
 
 $("element1").has("childElement"); // that will check  if element1 has a child matches the to-be-found element and will return **boolean value**
+```
+
+## CSS
+
+```javascript
+$("element").css(); // returns an object of the selected element styles
+
+$("element").css("color, height, width"); // returns an object of the selected element's specified styles
+
+$("element").css({
+  "background-color": "#ff0",
+  color: "#fff",
+  padding: "10px",
+});
+// setting styles on an element
+```
+
+> the css method works also with the **select All fucntion (\$\$)**.
+
+## attributes
+
+```javascript
+$("element").attr(); // returns an object of all the attributes and its value that the element has
+
+$("element").attr("attr_1, attr_2, ...."); // returns an object of all the attributes **specified** and its value
+
+$("element").attr({
+  class: "test",
+  attr_2 : "some value",
+  ....
+}); // this will reset the attributes you specified to the value you defined
+
+$("element").addAttr("attr-1 , attr-2, ....") // to add attributes
+
+$("element").removeAttr("attr-1 , attr-2, ....") // to remove attributes
+
+$("element").toggleAttr("attr-1 , attr-2, ....") // to toggle attributes
+```
+
+## events
+
+```javascript
+
+$("element").on("click, mouseleave, ...", function(){
+  // do some thing
+  // you can access the target element using "this" keyword not $(this).
+}); // this will set a punch of events to execute a specific function
+
+$("element").on({
+  click: function(){
+    // handle click event
+  },
+
+  mouseenter: function(){
+    // handle mouse enter event
+  },
+  ....
+});
+```
+
+## classes
+
+```javascript
+$("element").addClass("class-1, class-2, ....");
+
+$("element").removeClass("class-1, class-2, ....");
+
+$("element").toggleClass("class-1, class-2, ....");
+```
+
+## some extra methods
+
+```javascript
+$("element").clone(); // to clone an element
+
+$$("elements")[number] > // to select the element with its index
+  OR;
+$$("elements").eq(number); // to select the element with its index
 ```
