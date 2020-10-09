@@ -1,6 +1,9 @@
 *,
 ::after,
 ::before {
+  background-position: center center;
+  background-origin: border-box;
+  background-clip: border-box;
   flex-shrink: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
