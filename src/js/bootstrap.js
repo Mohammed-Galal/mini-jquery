@@ -1,15 +1,3 @@
-//  Object Keys || Gettin AN Object Entries
-Object.defineProperty(Object.prototype, "keys", {
-  get: function () {
-    const arr = [];
-    for (let i in this) {
-      if (i === "forEach" || i === "filter" || i === "keys") continue;
-      arr[arr.length] = i;
-    }
-    return arr;
-  },
-});
-
 //  OBJECT LOOP
 Object.prototype.forEach = function ($fn) {
   for (let i in this) {
