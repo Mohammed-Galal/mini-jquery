@@ -2,8 +2,6 @@
 ::after,
 ::before {
   background-position: center center;
-  background-origin: border-box;
-  background-clip: border-box;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-box-sizing: border-box;
@@ -1677,4 +1675,3 @@ input::-webkit-input-placeholder {
     order: 13;
   }
 }
-/*# sourceMappingURL=main.css.map */
