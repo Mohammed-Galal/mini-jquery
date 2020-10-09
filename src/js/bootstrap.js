@@ -1,7 +1,7 @@
 //  OBJECT LOOP
 Object.prototype.forEach = function ($fn) {
   for (let i in this) {
-    if (i === "forEach" || i === "filter" || i === "keys") continue;
+    if (i === "forEach" || i === "filter") continue;
     $fn(i, this[i]);
   }
 };
@@ -10,7 +10,7 @@ Object.prototype.forEach = function ($fn) {
 Object.prototype.filter = function ($fn) {
   const obj = this;
   for (let prop in obj) {
-    if (prop === "forEach" || prop === "filter" || prop === "keys") continue;
+    if (prop === "forEach" || prop === "filter") continue;
     let passed = $fn(prop, obj[prop]);
     if (!passed) delete obj[prop];
   }

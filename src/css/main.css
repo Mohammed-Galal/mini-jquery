@@ -58,15 +58,19 @@ body {
   -o-border-image: repeating-linear-gradient(
       to bottom left,
       transparent,
-      currentColor transparent,
-      currentColor transparent
+      currentColor,
+      transparent,
+      currentColor,
+      transparent
     )
     1;
   border-image: repeating-linear-gradient(
       to bottom left,
       transparent,
-      currentColor transparent,
-      currentColor transparent
+      currentColor,
+      transparent,
+      currentColor,
+      transparent
     )
     1;
 }
@@ -1675,3 +1679,4 @@ input::-webkit-input-placeholder {
     order: 13;
   }
 }
+/*# sourceMappingURL=main.css.map */
