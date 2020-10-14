@@ -208,3 +208,29 @@ $("element").hasClass("some-class, another-class,...."); // checks is the select
 ```
 
 > the checking methods is also available with the **select All function (\$\$)**
+
+# for media audio and video elements
+
+## to get the buffers
+
+```javascript
+videoElement.$buffers; // that will return an object of all the bufferd sections in the audio/video element
+```
+
+## to get the duration
+
+```javascript
+videoElement.$duration; // that will return an object of the audio/video duration in hours, minutes and seconds
+```
+
+## to get the current Time
+
+```javascript
+videoElement.$currentTime; // that will return an object of the audio/video current time in hours, minutes and seconds
+```
+
+## to get the time left to finish
+
+```javascript
+videoElement.$timeLeft; // that will return an object of the audio/video time left in hours, minutes and seconds
+```
